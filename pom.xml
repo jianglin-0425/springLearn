@@ -16,6 +16,7 @@
         <module>spring01-Hello</module>
         <module>spring02-caltools</module>
         <module>Spring03-mySpringFramework</module>
+        <module>spring04-aop</module>
     </modules>
     <dependencies>
         <dependency>
