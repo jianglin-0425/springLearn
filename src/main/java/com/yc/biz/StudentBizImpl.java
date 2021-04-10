@@ -32,7 +32,7 @@ public class StudentBizImpl {
     @Autowired      //org.springframe
     @Qualifier("studentDaoMybatisImpl")
      // 因为有多个对象可以注入 ，所以这里必须使用@Name("StudentDaoMybatisImpl")，若只有一个对象，则不需要写
-    @Resource(name = "studentDaoJpaImpl")
+    @Resource(name = "studentDaoJpaImpl")       //沒有找到同名的托管bean     則按类型注入
     public void setDao(StudentDao dao) {
         this.dao = dao;
     }

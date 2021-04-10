@@ -18,6 +18,7 @@ public class StudentBizImplTest {
 
     @Test
     public void add() {
+
         sbi.add("张三");
     }
 

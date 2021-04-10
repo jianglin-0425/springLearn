@@ -17,6 +17,8 @@
         <module>spring02-caltools</module>
         <module>Spring03-mySpringFramework</module>
         <module>spring04-aop</module>
+        <module>spring05-selfaop_jdkproxy</module>
+        <module>spring06-selfaop_cglibproxy</module>
     </modules>
     <dependencies>
         <dependency>

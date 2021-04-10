@@ -28,8 +28,8 @@ public class StudentBizImpl implements StudentBiz {
     }
 
 
-//    @MyAutowire
-    @Resource(name = "studentDaoJpaImpl")
+//    @Autowire                  //按类型注入  ，如果有多个同类托管bean，则报错        要不就加入@Qualify
+    @Resource(name = "studentDaoJpaImpl")       //先找到同名托管bean  若找不到在根据类型注入
     public void setDao(StudentDao dao) {
         this.dao = dao;
     }
